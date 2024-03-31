@@ -7,6 +7,7 @@ public class Inscripcion {
     private Alumno alumno;
 
     public Boolean aprobada() {
+        //TODO
         return true;
     }
 }
