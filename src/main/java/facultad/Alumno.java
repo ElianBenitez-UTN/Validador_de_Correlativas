@@ -1,6 +1,7 @@
 package facultad;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Alumno {
@@ -11,5 +12,9 @@ public class Alumno {
     public Alumno(String nombre) {
         this.nombre = nombre;
         this.materiasAprobadas = new ArrayList<>();
+    }
+
+    public void agregarMateriasAprobadas(Materia ... materias) {
+        Collections.addAll(this.materiasAprobadas, materias);
     }
 }
